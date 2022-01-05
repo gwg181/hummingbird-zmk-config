@@ -99,7 +99,7 @@
              &kp W         &kp I         &kp E         &kp A         &kp DOT           &kp G         &kp T         &kp N         &kp S         &kp H
                            &kp Y         &kp QUOT      &kp COMMA                                     &kp M         &kp L         &kp C
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       MO(NAV_L)     &kp SPACE         MO(UPP_L)     MO(SYM_L)
+                                                       $kp SPACE     MO(NAV_L)         &kp ENTER     &kp BSPC
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                
             >;
