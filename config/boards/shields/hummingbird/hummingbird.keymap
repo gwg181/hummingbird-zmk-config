@@ -99,7 +99,7 @@
              &kp W         &kp I         &kp E         &kp A         &kp DOT           &kp G         &kp T         &kp N         &kp S         &kp H
                            &kp Y         &kp QUOT      &kp COMMA                                     &kp M         &kp L         &kp C
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp SPACE     &kp TAB         &kp ENTER     &kp BSPC
+                                                       &kp SPACE     &kp TAB          &lt SYM_L ENTER    &lt NUM_L BSPC 
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                
             >;
@@ -135,9 +135,9 @@
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp SEMI      &kp COLON     &kp DQT
-             &kp MINUS     &kp PLUS      &kp EQUAL     &kp ASTRK     &kp FSLH          &kp BSLH      &sk LCTRL     &sk LSHFT     &sk LALT      &sk LGUI
-                           &kp TILDE     &kp GRAVE     &kp QMARK                                     &kp PIPE      &kp LT        &kp GT
+             &kp COLON     &kp AMPS     &kp STAR      &kp LPAR      &kp PLUS         &kp CARET     &kp AMPS      &kp SEMI      &kp COLON     &kp DQT
+             &kp TILDE     &kp DLLR     &kp PRCNT     &kp CARET     &kp PIPE          &kp BSLH      &sk LCTRL     &sk LSHFT     &sk LALT      &sk LGUI
+                           &kp EXCL     &kp AT        &kp POUND                                     &kp PIPE      &kp LT        &kp GT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &kp UNDER         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -148,11 +148,11 @@
             label = "Num";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &none         &kp N7        &kp N8        &kp N9        &none             &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
-             &kp MINUS     &kp N4        &kp N5        &kp N6        &kp SLASH         &kp F11       &sk LCTRL     &sk LSHFT     &sk LALT      &sk LGUI
+             &kp SEMI      &kp N7        &kp N8        &kp N9        &kp EQUAL             &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+             &kp GRAVE     &kp N4        &kp N5        &kp N6        &kp BSLH         &kp F11       &sk LCTRL     &sk LSHFT     &sk LALT      &sk LGUI
                            &kp N1        &kp N2        &kp N3                                        &kp F12       &kp COMMA     &kp DOT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &kp N0            &trans        &trans
+                                                       &kp N0        &trans            &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
