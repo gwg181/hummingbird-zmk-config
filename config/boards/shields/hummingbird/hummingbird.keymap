@@ -90,7 +90,6 @@
         COMBO(esc, &kp ESC, 3 4, DEF_L)
         COMBO(del, &kp DEL, 13 14, DEF_L)
         COMBO(select_all, &kp LC(A), 5 6, NAV_L)
-        COMBO(escape, &kp ESC, 3 4, DEF_L)
     };
 
 
@@ -104,7 +103,7 @@
              &hm LGUI W    &hm LALT I    &hm LCTRL E   &hm LSHFT A   &kp DOT           &kp G         &hm RSHFT T   &hm RCTRL N   &hm LALT S    &hm RGUI H
                            &hm RALT Y    &kp QUOT      &kp COMMA                                     &kp M         &kp L         &hm RALT C
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &lt NAV_L SPACE     &kp ESC    &lt SYM_L ENTER    &lt NUM_L BSPC 
+                                                       &lt NAV_L SPACE     &kp TAB    &lt SYM_L ENTER    &lt NUM_L BSPC 
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                
             >;
