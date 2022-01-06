@@ -96,7 +96,7 @@
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &kp J         &kp P         &kp U         &kp O         &kp K             &kp B         &kp D         &kp R         &kp F         &kp Q
-             &kp W         &kp I         &kp E         &kp A         &kp DOT           &kp D         &kp T         &kp N         &kp S         &kp H
+             &kp W         &kp I         &kp E         &kp A         &kp DOT           &kp G         &kp T         &kp N         &kp S         &kp H
                            &kp Y         &kp QUOT      &kp COMMA                                     &kp M         &kp L         &kp C
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp SPACE     &kp TAB         &kp ENTER     &kp BSPC
