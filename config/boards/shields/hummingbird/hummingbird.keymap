@@ -99,7 +99,7 @@
              &kp W         &kp I         &kp E         &kp A         &kp DOT           &kp G         &kp T         &kp N         &kp S         &kp H
                            &kp Y         &kp QUOT      &kp COMMA                                     &kp M         &kp L         &kp C
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp SPACE     &kp TAB          &lt SYM_L ENTER    &lt NUM_L BSPC 
+                                                       &lt NAV_L SPACE     &kp TAB    &lt SYM_L ENTER    &lt NUM_L BSPC 
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                
             >;
@@ -109,9 +109,9 @@
             label = "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp PG_UP     &kp HOME      &kp UARW      &kp END       &caps_word
-             &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp ENTER     &kp RARW      &kp ESC
-                           &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp DARW      &key_repeat
+             &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp K_REDO   &kp K_PASTE   &kp K_COPY    &kp K_CUT     &kp K_UNDO
+             &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     &kp LC(Z)         &kp CAPS     &kp LARW      &kp DARW      &kp UARW      &kp RARW
+                           &kp LC(X)     &kp LC(C)     &kp LC(V)                                    &kp HOME      &kp PG_DN     &kp PG_UP
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &kp BSPC      &kp DEL
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -152,7 +152,7 @@
              &kp GRAVE     &kp N4        &kp N5        &kp N6        &kp BSLH         &kp F11       &sk LCTRL     &sk LSHFT     &sk LALT      &sk LGUI
                            &kp N1        &kp N2        &kp N3                                        &kp F12       &kp COMMA     &kp DOT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp N0        &trans            &trans        &trans
+                                                       &kp N0        &kp MINUS            &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
