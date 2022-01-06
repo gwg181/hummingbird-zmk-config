@@ -38,6 +38,15 @@
         
         #define MO(LAYER) &mo_tap LAYER F24
         
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     combos {
@@ -96,8 +105,8 @@
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &kp J         &kp P         &kp U         &kp O         &kp K             &kp B         &kp D         &kp R         &kp F         &kp Q
-             &mt LGUI W    &mt LALT I    &mt LCTRL E   &mt LSHFT A   &kp DOT           &kp G         &mt RSHFT T   &mt RCTRL N   &mt LALT S    &mt RGUI H
-                           &mt RALT Y    &kp QUOT      &kp COMMA                                     &kp M         &kp L         &mt RALT C
+             &hm LGUI W    &hm LALT I    &hm LCTRL E   &hm LSHFT A   &kp DOT           &kp G         &hm RSHFT T   &hm RCTRL N   &hm LALT S    &hm RGUI H
+                           &hm RALT Y    &kp QUOT      &kp COMMA                                     &kp M         &kp L         &hm RALT C
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &lt NAV_L SPACE     &kp TAB    &lt SYM_L ENTER    &lt NUM_L BSPC 
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
