@@ -90,7 +90,8 @@
 
         /* Convenience */
         COMBO(esc, &kp ESC, 3 4, DEF_L)
-        COMBO(del, &kp DEL, 13 14, DEF_L)
+        COMBO(del, &kp DEL, 15 16, DEF_L)
+        COMBO(tab, &kp TAB, 13 14, DEF_L)
         COMBO(select_all, &kp LC(A), 20 21, NAV_L)
     };
 
@@ -110,7 +111,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &kp J         &kp P         &kp U         &kp O         &kp K             &kp B         &kp D         &kp R         &kp F         &kp Q
              &kp W         &kp I         &kp E         &kp A         &kp DOT           &kp G         &kp T         &kp N         &kp S         &kp H
-                           &kp Y         &kp QUOT      &kp COMMA                                     &kp M         &kp L     &kp C
+                           &kp Y         &kp QUOT      &kp COMMA                                     &kp M         &kp L         &kp C
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &mo_nav       &kp SPACE         &mo_upp       &mo_sym
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -123,7 +124,7 @@
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp PG_UP     &kp HOME      &kp UARW      &kp END       &caps_word
-             &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp ENTER     &kp RARW      &kp ESC
+             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp ENTER     &kp RARW      &kp ESC
                            &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp DARW      &key_repeat
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &kp BSPC      &kp DEL
@@ -136,8 +137,8 @@
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &kp LS(J)     &kp LS(P)     &kp LS(U)     &kp LS(O)     &kp LS(K)         &kp LS(B)     &kp LS(D)     &kp LS(R)     &kp LS(F)     &kp LS(Q)
-             &kp LS(W)     &kp LS(I)     &kp LS(E)     &kp LS(A)     &kp LS(GT)         &kp LS(G)     &kp LS(T)     &kp LS(N)     &kp LS(S)     &kp LS(H)
-                           &kp LS(Y)     &kp DQT       &kp LT                                         &kp LS(M)     &kp LS(L)        &kp LS(C)
+             &kp LS(W)     &kp LS(I)     &kp LS(E)     &kp LS(A)     &kp GT            &kp LS(G)     &kp LS(T)     &kp LS(N)     &kp LS(S)     &kp LS(H)
+                           &kp LS(Y)     &kp DQT       &kp LT                                        &kp LS(M)     &kp LS(L)     &kp LS(C)
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &kp LS(SPACE)     &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -148,9 +149,9 @@
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp SEMI      &kp COLON     &kp DQT
-             &kp MINUS     &kp PLUS      &kp EQUAL     &kp ASTRK     &kp FSLH          &kp BSLH      &sk LCTRL     &sk LSHFT     &sk LALT      &sk LGUI
-                           &kp TILDE     &kp GRAVE     &kp QMARK                                     &kp PIPE      &kp LT        &kp GT
+             &none         &kp AMPS      &kp ASTRK     &none         &none             &kp CARET     &kp AMPS      &kp SEMI      &kp COLON     &kp DQT
+             &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &kp BSLH      &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+                           &kp EXCL      &kp AT        &kp POUND                                     &kp PIPE      &kp LT        &kp GT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &kp UNDER         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -161,11 +162,11 @@
             label = "Num";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &none         &kp N7        &kp N4        &kp N3        &none             &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
-             &kp MINUS     &kp N2        &kp N1        &kp N0        &kp SLASH         &kp F11       &sk LCTRL     &sk LSHFT     &sk LALT      &sk LGUI
+             &kp GRAVE         &kp N7        &kp N4        &kp N3        &none             &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+             &kp SEMI      &kp N2        &kp N1        &kp N0        &kp EQUAL         &kp F11       &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
                            &kp N8        &kp N6        &kp N5                                        &kp F12       &kp COMMA     &kp DOT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &kp N9            &trans        &trans
+                                                       &kp N9        &kp MINUS         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
