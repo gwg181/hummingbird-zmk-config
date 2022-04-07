@@ -65,35 +65,35 @@
         /*                KEY POSITIONS
 
           ╭────────────────────╮ ╭────────────────────╮
-          │  0   1   2   3   4 │ │  5   6   7   8   9 │
-          │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
-          │     20  21  22     │ │     23  24  25     │
+          │     0   1   2   3  │ │  4   5   6   7     │
+          │ 8   9   10  11  12 │ │ 13  14  15  16  17 │
+          │ 18  19  20  21     │ │     22  23  24  25 │
           ╰───────────╮ 26  27 │ │ 28  29 ╭───────────╯
                       ╰────────╯ ╰────────╯            */
 
          /* Letters */
-        COMBO(lower_v, &kp V, 21 22, DEF_L)
-        COMBO(lower_x, &kp X, 23 24, DEF_L)
-        COMBO(lower_z, &kp Z, 24 25, DEF_L)
-        COMBO(forward_slash, &kp FSLH, 20 21, DEF_L)
-        COMBO(upper_v, &kp LS(V), 21 22, UPP_L)
-        COMBO(upper_x, &kp LS(X), 23 24, UPP_L)
-        COMBO(upper_z, &kp LS(Z), 24 25, UPP_L)
-        COMBO(question_mark, &kp LS(FSLH), 20 21, UPP_L)
+        COMBO(lower_v, &kp V, 20 21, DEF_L)
+        COMBO(lower_x, &kp X, 22 23, DEF_L)
+        COMBO(lower_z, &kp Z, 23 24, DEF_L)
+        COMBO(forward_slash, &kp FSLH, 19 20, DEF_L)
+        COMBO(upper_v, &kp LS(V), 20 21, UPP_L)
+        COMBO(upper_x, &kp LS(X), 22 23, UPP_L)
+        COMBO(upper_z, &kp LS(Z), 23 24, UPP_L)
+        COMBO(question_mark, &kp LS(FSLH), 19 20, UPP_L)
 
         /* Brackets */
-        COMBO(left_bracket, &kp LBKT, 1 11, DEF_L UPP_L SYM_L NUM_L)
-        COMBO(right_bracket, &kp RBKT, 8 18, DEF_L UPP_L SYM_L NUM_L)
-        COMBO(left_parenthesis, &kp LPAR, 2 12, DEF_L UPP_L SYM_L NUM_L)
-        COMBO(right_parenthesis, &kp RPAR, 7 17, DEF_L UPP_L SYM_L NUM_L)
-        COMBO(left_brace, &kp LBRC, 3 13, DEF_L UPP_L SYM_L NUM_L)
-        COMBO(right_brace, &kp RBRC, 6 16, DEF_L UPP_L SYM_L NUM_L)
+        COMBO(left_bracket, &kp LBKT, 0 9, DEF_L UPP_L SYM_L NUM_L)
+        COMBO(right_bracket, &kp RBKT, 7 16, DEF_L UPP_L SYM_L NUM_L)
+        COMBO(left_parenthesis, &kp LPAR, 1 10, DEF_L UPP_L SYM_L NUM_L)
+        COMBO(right_parenthesis, &kp RPAR, 6 15, DEF_L UPP_L SYM_L NUM_L)
+        COMBO(left_brace, &kp LBRC, 2 11, DEF_L UPP_L SYM_L NUM_L)
+        COMBO(right_brace, &kp RBRC, 5 14, DEF_L UPP_L SYM_L NUM_L)
 
         /* Convenience */
-        COMBO(esc, &kp ESC, 3 4, DEF_L)
-        COMBO(del, &kp DEL, 15 16, DEF_L)
-        COMBO(tab, &kp TAB, 13 14, DEF_L)
-        COMBO(select_all, &kp LC(A), 20 21, NAV_L)
+        COMBO(esc, &kp ESC, 1 2, DEF_L)
+        COMBO(del, &kp DEL, 13 14, DEF_L)
+        COMBO(tab, &kp TAB, 11 12, DEF_L)
+        COMBO(select_all, &kp LC(A), 19 20, NAV_L)
     };
 
     conditional_layers {

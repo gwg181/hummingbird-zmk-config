@@ -89,7 +89,7 @@
         COMBO(right_brace, &kp RBRC, 6 16, DEF_L UPP_L SYM_L NUM_L)
 
         /* Convenience */
-        COMBO(esc, &kp ESC, 3 4, DEF_L)
+        COMBO(esc, &kp ESC, 2 3, DEF_L)
         COMBO(del, &kp DEL, 15 16, DEF_L)
         COMBO(tab, &kp TAB, 13 14, DEF_L)
         COMBO(select_all, &kp LC(A), 20 21, NAV_L)
