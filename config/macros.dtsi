@@ -1,0 +1,5 @@
+    ZMK_MACRO(lte,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LT &kp EQUAL>;
+    )
