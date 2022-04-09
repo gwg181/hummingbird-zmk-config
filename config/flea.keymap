@@ -91,7 +91,8 @@
 
         /* Convenience */
         COMBO(esc, &kp ESC, 1 2, DEF_L)
-        COMBO(del, &kp DEL, 13 14, DEF_L)
+        COMBO(ent, &kp ENT, 13 14, DEF_L)
+        COMBO(del, &kp DEL, 4 5, DEF_L)
         COMBO(tab, &kp TAB, 11 12, DEF_L)
         COMBO(select_all, &kp LC(A), 19 20, NAV_L)
     };
