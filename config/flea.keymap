@@ -93,7 +93,9 @@
         COMBO(right_brace, &kp RBRC, 5 14, DEF_L UPP_L SYM_L NUM_L)
 
 				/* Symbols */
-        COMBO(lte, &lte, 0 9, SYM_L)
+        COMBO(leq, &leq, 9 19, SYM_L)
+        COMBO(eq, &eq, 10 20, SYM_L)
+        COMBO(geq, &geq, 11 21, SYM_L)
 
         /* Convenience */
         COMBO(esc, &kp ESC, 1 2, DEF_L)

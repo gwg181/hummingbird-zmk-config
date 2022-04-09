@@ -1,5 +1,17 @@
-    ZMK_MACRO(lte,
+    ZMK_MACRO(leq,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&kp LT &kp EQUAL>;
+    )
+
+    ZMK_MACRO(eq,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp EQUAL &kp EQUAL>;
+    )
+
+    ZMK_MACRO(geq,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp GT &kp EQUAL>;
     )
