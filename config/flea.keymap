@@ -14,10 +14,7 @@
 #define UPP_L 2
 #define SYM_L 3
 #define NUM_L 4
-#define TAPPING_TERM 175
-#define TAPPING_TERM_RING 200
-#define TAPPING_TERM_PINKY 225
-#define QUICK_TAP_TERM 300
+
 /* Behavior Settings */
 &caps_word {
   continue-list = <UNDERSCORE MINUS BACKSPACE>;
@@ -26,41 +23,7 @@
 &sk {
   release-after-ms = <60000>;
 };
-&as{
 
-    compatible = "zmk,behavior-hold-tap";
-    label = "AUTO_SHIFT";
-    #binding-cells = <2>;
-    tapping-term-ms = <TAPPING_TERM>;
-    quick-tap-ms = <QUICK_TAP_TERM>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&kp>;
-
-};
-
-&asr{
-
-    compatible = "zmk,behavior-hold-tap";
-    label = "AUTO_SHIFT_RING";
-    #binding-cells = <2>;
-    tapping-term-ms = <TAPPING_TERM_RING>;
-    quick-tap-ms = <QUICK_TAP_TERM>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&kp>;
-
-};
-
-&asp{
-
-    compatible = "zmk,behavior-hold-tap";
-    label = "AUTO_SHIFT_PINKY";
-    #binding-cells = <2>;
-    tapping-term-ms = <TAPPING_TERM_PINKY>;
-    quick-tap-ms = <QUICK_TAP_TERM>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&kp>;
-
-};
 / {
     ZMK_MACRO(mo_nav,
         wait-ms = <0>;
