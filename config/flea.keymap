@@ -26,7 +26,7 @@
 &sk {
   release-after-ms = <60000>;
 };
-as: auto_shift {
+&as: auto_shift {
 
     compatible = "zmk,behavior-hold-tap";
     label = "AUTO_SHIFT";
@@ -38,7 +38,7 @@ as: auto_shift {
 
 };
 
-asr: auto_shift_ring {
+&asr: auto_shift_ring {
 
     compatible = "zmk,behavior-hold-tap";
     label = "AUTO_SHIFT_RING";
@@ -50,7 +50,7 @@ asr: auto_shift_ring {
 
 };
 
-asp: auto_shift_pinky {
+&asp: auto_shift_pinky {
 
     compatible = "zmk,behavior-hold-tap";
     label = "AUTO_SHIFT_PINKY";
