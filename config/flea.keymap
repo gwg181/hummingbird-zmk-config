@@ -3,57 +3,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+#include "general.dtsi"
 
-
-/* Layers */
-#define DEF_L 0
-#define NAV_L 1
-#define UPP_L 2
-#define SYM_L 3
-#define NUM_L 4
-
-/* Behavior Settings */
-&caps_word {
-  continue-list = <UNDERSCORE MINUS BACKSPACE>;
-};
-
-&sk {
-  release-after-ms = <60000>;
-};
 
 / {
 
 #include "macros.dtsi"
-
-    ZMK_MACRO(mo_nav,
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings
-        = <&macro_tap &kp K_CANCEL>
-        , <&macro_press &mo NAV_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &mo NAV_L>;)
-
-    ZMK_MACRO(mo_upp,
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings
-        = <&macro_tap &kp K_CANCEL>
-        , <&macro_press &mo UPP_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &mo UPP_L>;)
-
-    ZMK_MACRO(mo_sym,
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings
-        = <&macro_tap &kp K_CANCEL>
-        , <&macro_press &mo SYM_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &mo SYM_L>;)
 
     combos {
         compatible = "zmk,combos";
