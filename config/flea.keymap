@@ -91,7 +91,7 @@
 
         /* Convenience */
         COMBO(esc, &kp ESC, 1 2, DEF_L)
-        COMBO(ent, &kp ENTER, 13 14, DEF_L)
+        COMBO(ent, &kp ENTER, 15 16, DEF_L)
         COMBO(del, &kp DEL, 4 5, DEF_L)
         COMBO(tab, &kp TAB, 11 12, DEF_L)
         COMBO(select_all, &kp LC(A), 19 20, NAV_L)
@@ -125,7 +125,7 @@
             label = "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp F2        &kp F3        &kp F4        &kp F5            &kp PG_UP     &kp HOME      &kp UARW      &kp END
+                           &kp F2        &kp F3        &kp F4        &kp F5            &kp PG_UP     &kp HOME      &kp ENTER     &kp END
              &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp DARW      &kp UARW       &kp RARW
              &kp F1        &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp DARW      &key_repeat   &caps_word
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
