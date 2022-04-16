@@ -125,7 +125,7 @@
             label = "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp F2        &kp F3        &kp F4        &kp F5            &kp PG_UP     &kp HOME      &kp ENTER     &kp END
+                           &kp F2        &kp F3        &kp F4        &bt BT_NXT        &kp PG_UP     &kp HOME      &kp ENTER     &kp END
              &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp DARW      &kp UARW       &kp RARW
              &kp F1        &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp LS(TAB)   &key_repeat   &caps_word
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
