@@ -151,8 +151,8 @@
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp AMPS      &kp ASTRK     &none         &none             &kp CARET     &kp AMPS      &kp SEMI      &kp COLON
-             &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &kp BSLH      &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+                           &kp AMPS      &kp ASTRK     &none         &kp BSLH          &kp CARET     &kp AMPS      &kp SEMI      &kp COLON
+             &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &none         &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
              &none         &kp EXCL      &kp AT        &kp POUND                                     &kp PIPE      &kp LT        &kp GT        &kp DQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &kp UNDER         &trans        &trans
