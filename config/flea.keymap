@@ -42,6 +42,30 @@
         , <&macro_press &mo UPP_L>
         , <&macro_pause_for_release>
         , <&macro_release &mo UPP_L>;)
+    ZMK_MACRO(leq,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LT &kp EQUAL>;)
+
+    ZMK_MACRO(eq,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp EQUAL &kp EQUAL>;)
+
+    ZMK_MACRO(geq,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp GT &kp EQUAL>;)
+
+    ZMK_MACRO(neq,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp EXCL &kp EQUAL>;)
+
+    ZMK_MACRO(arrow,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp MINUS &kp GT>;)
 
     ZMK_MACRO(mo_sym,
         wait-ms = <0>;
@@ -95,6 +119,12 @@
         COMBO(del, &kp DEL, 4 5, DEF_L)
         COMBO(tab, &kp TAB, 9 10, DEF_L)
         COMBO(select_all, &kp LC(A), 19 20, NAV_L)
+
+
+        COMBO(geq, &geq, 0 2, DEF_L)
+        COMBO(leq, &leq, 19 21, DEF_L)
+        COMBO(eq, &eq, 9 11, DEF_L)
+        COMBO(arrow, &arrow, 14 16, DEF_L)
     };
 
     conditional_layers {
