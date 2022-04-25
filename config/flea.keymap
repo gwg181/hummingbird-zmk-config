@@ -61,7 +61,11 @@
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&kp EXCL &kp EQUAL>;)
-
+    ZMK_MACRO(arrow,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp MINUS &kp GT>;)
+        
     ZMK_MACRO(g,
         wait-ms = <30>;
         tap-ms = <40>;
