@@ -195,7 +195,7 @@
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                            &kp N7        &kp N4        &kp N3        &none             &kp W         &kp G         &kp J         &kp K
-             &kp SEMI      &kp N2        &kp N1        &kp N0        &kp EQUAL         &kp F11       &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+             &kp SEMI      &kp N2        &kp N1        &kp N0        &kp EQUAL         &kp B         &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
              &kp GRAVE     &kp N8        &kp N6        &kp N5                                        &kp F12       &kp COMMA     &kp DOT       &kp F10
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp N9        &kp MINUS         &trans        &trans
