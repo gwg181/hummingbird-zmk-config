@@ -125,15 +125,12 @@
         COMBO(leq, &leq, 19 21, DEF_L)
         COMBO(eq, &eq, 9 11, DEF_L)
         COMBO(arrow, &arrow, 14 16, DEF_L)
+
+
+        COMBO(num, &tog NUM_L, 28 29, DEF_L, NUM_L)
+
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <UPP_L SYM_L>;
-            then-layer = <NUM_L>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
