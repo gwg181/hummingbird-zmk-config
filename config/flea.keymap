@@ -62,10 +62,20 @@
         tap-ms = <40>;
         bindings = <&kp EXCL &kp EQUAL>;)
 
-    ZMK_MACRO(arrow,
+    ZMK_MACRO(g,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp MINUS &kp GT>;)
+        bindings = <&kp G &tog DEF_L>;)
+
+    ZMK_MACRO(j,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp J &tog DEF_L>;)
+
+    ZMK_MACRO(k,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp K &tog DEF_L>;)
 
     ZMK_MACRO(mo_sym,
         wait-ms = <0>;
@@ -191,7 +201,7 @@
             label = "Num";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp N7        &kp N4        &kp N3        &none             &kp W         &kp G         &kp J         &kp K
+                           &kp N7        &kp N4        &kp N3        &none             &kp W         &g            &j            &k
              &kp SEMI      &kp N2        &kp N1        &kp N0        &kp EQUAL         &kp F11       &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
              &kp GRAVE     &kp N8        &kp N6        &kp N5                                        &kp F12       &kp COMMA     &kp DOT       &kp F10
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
