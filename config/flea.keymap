@@ -127,7 +127,7 @@
         COMBO(arrow, &arrow, 14 16, DEF_L)
 
 
-        COMBO(num, &tog NUM_L, 28 29, DEF_L, NUM_L)
+        COMBO(num, &tog NUM_L, 28 29, DEF_L NUM_L)
 
     };
 
