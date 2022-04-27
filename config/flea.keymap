@@ -185,7 +185,7 @@
              &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp EQUAL         &none         &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
              &kp SEMI      &kp EXCL      &kp AT        &kp POUND                                     &kp PIPE      &kp LT        &kp GT        &kp DQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &kp UNDER         &trans        &trans
+                                                       &kp MINUS     &kp UNDER         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
