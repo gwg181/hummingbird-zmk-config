@@ -90,9 +90,15 @@
 
         /* Convenience */
         COMBO(esc, &kp ESC, 2 3, DEF_L)
+        COMBO(ent, &kp ENTER, 17 18, DEF_L)
         COMBO(del, &kp DEL, 15 16, DEF_L)
         COMBO(tab, &kp TAB, 13 14, DEF_L)
         COMBO(select_all, &kp LC(A), 20 21, NAV_L)
+
+        COMBO(geq, &geq, 1 3, DEF_L)
+        COMBO(leq, &leq, 20 22, DEF_L)
+        COMBO(eq, &eq, 11 13, DEF_L)
+        COMBO(arrow, &arrow, 16 18, DEF_L)
     };
 
     conditional_layers {
@@ -123,9 +129,9 @@
             label = "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp PG_UP     &kp HOME      &kp UARW      &kp END       &caps_word
-             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp ENTER     &kp RARW      &kp ESC
-                           &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp DARW      &key_repeat
+             &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp PG_UP     &kp HOME      &kp ENTER     &kp END       &caps_word
+             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp DARW      &kp UARW      &kp RARW
+                           &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp LS(TAB)      &key_repeat
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &kp BSPC      &kp DEL
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -149,11 +155,11 @@
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &none         &kp AMPS      &kp ASTRK     &none         &none             &kp CARET     &kp AMPS      &kp SEMI      &kp COLON     &kp DQT
-             &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &kp BSLH      &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+             &kp SEMI         &kp AMPS      &kp ASTRK     &none         &kp PLUS           &kp CARET     &kp AMPS      &kp SEMI      &kp COLON     &kp DQT
+             &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp EQUAL          &kp BSLH      &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
                            &kp EXCL      &kp AT        &kp POUND                                     &kp PIPE      &kp LT        &kp GT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &kp UNDER         &trans        &trans
+                                                       &kp MINUS      &kp UNDER         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
