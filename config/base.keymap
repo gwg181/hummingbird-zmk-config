@@ -198,8 +198,8 @@
             label = "Num";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp GRAVE     &kp N7        &kp N4        &kp N3        &none             &kp k        &kp b         &kp w         &kp e         &kp F10
-             &kp SEMI      &kp N2        &kp N1        &kp N0        &kp EQUAL         &kp j        &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+             &kp GRAVE     &kp N7        &kp N4        &kp N3        &none             &kp K        &kp B         &kp W         &kp E         &kp F10
+             &kp SEMI      &kp N2        &kp N1        &kp N0        &kp EQUAL         &kp J        &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
                            &kp N8        &kp N6        &kp N5                                       &kp F12       &kp COMMA     &kp DOT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp N9        &kp MINUS         &trans        &trans
