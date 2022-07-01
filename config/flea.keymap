@@ -110,8 +110,8 @@
         COMBO(lower_j, &kp J, 22 23, DEF_L)
         COMBO(upper_j, &kp LS(J), 22 23, UPP_L)
 
-        COMBO(forward_slash, &kp FLSH, 23 24, DEF_L)
-        COMBO(question_mark, &kp LS(FLSH), 23 24, UPP_L)
+        COMBO(forward_slash, &kp FSLH, 23 24, DEF_L)
+        COMBO(question_mark, &kp LS(FSLH), 23 24, UPP_L)
 
         /* Brackets */
         COMBO(left_bracket, &kp LBKT, 0 9, DEF_L UPP_L SYM_L NUM_L)
