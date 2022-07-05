@@ -182,7 +182,7 @@
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp SEMI      &kp AMPS      &kp ASTRK     &kp BLSH      &kp PLUS           &neq          &leq          &eq           &geq          &arrow
+             &kp SEMI      &kp AMPS      &kp ASTRK     &kp BSLH      &kp PLUS           &neq          &leq          &eq           &geq          &arrow
              &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp EQUAL          &none         &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
                            &kp EXCL      &kp AT        &kp POUND                                      &kp LT        &kp PIPE      &kp GT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
