@@ -124,6 +124,7 @@
         COMBO(del, &kp DEL, 15 16, DEF_L)
         COMBO(tab, &kp TAB, 13 14, DEF_L)
         COMBO(select_all, &kp LC(A), 20 21, NAV_L)
+        COMBO(tmux_prefix, &kp LC(A), 23 25, DEF_L)
 
         COMBO(geq, &geq, 1 3, DEF_L)
         COMBO(leq, &leq, 20 22, DEF_L)
@@ -159,7 +160,7 @@
             label = "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp F1        &kp F2        &kp N0        &hop          &kp DLLR          &kp PG_UP     &kp HOME      &kp ENTER     &kp END       &caps_word
+             &none         &kp N0        &kp LC(O)     &kp HOME      &kp hop           &kp PG_UP     &kp END       &kp LC(I)     &kp DLLR      &caps_word
              &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp DARW      &kp UARW      &kp RARW
                            &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp LS(TAB)   &key_repeat
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
@@ -185,9 +186,9 @@
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp SEMI      &kp AMPS      &kp ASTRK     &none         &kp PLUS           &kp CARET     &kp AMPS      &kp SEMI      &kp COLON     &kp DQT
-             &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp EQUAL          &kp BSLH      &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
-                           &kp EXCL      &kp AT        &kp POUND                                      &kp PIPE      &kp LT        &kp GT
+             &kp SEMI      &kp AMPS      &kp ASTRK     &kp BLSH      &kp PLUS           &none         &none         &none         &none         &none
+             &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp EQUAL          &none         &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+                           &kp EXCL      &kp AT        &kp POUND                                      &kp LT        &kp PIPE      &kp GT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp MINUS      &kp UNDER         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -198,9 +199,9 @@
             label = "Num";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp GRAVE     &kp N7        &kp N4        &kp N3        &none             &kp K        &kp B         &kp W         &kp E         &kp F10
-             &kp SEMI      &kp N2        &kp N1        &kp N0        &kp EQUAL         &kp J        &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
-                           &kp N8        &kp N6        &kp N5                                       &kp F12       &kp COMMA     &kp DOT
+             &none         &kp N7        &kp N4        &kp N3        &kp PLUS          &kp K        &kp W         &kp B         &kp G         &kp Y
+             &kp GRAVE     &kp N2        &kp N1        &kp N0        &kp EQUAL         &kp J        &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+                           &kp N8        &kp N6        &kp N5                                       &kp D         &none         &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp N9        &kp MINUS         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
