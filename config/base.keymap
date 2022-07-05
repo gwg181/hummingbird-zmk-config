@@ -190,7 +190,7 @@
              &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp EQUAL          &none         &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
                            &kp EXCL      &kp AT        &kp POUND                                      &kp LT        &kp PIPE      &kp GT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp MINUS      &kp UNDER         &trans        &trans
+                                                       &kp UNDER      &kp MINUS         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
