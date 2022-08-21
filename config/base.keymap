@@ -70,7 +70,7 @@
     ZMK_MACRO(hop,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp SPACE &kp H &kp LS(C)>;)
+        bindings = <&kp SPACE &kp G &kp S &kp S>;)
 
     ZMK_MACRO(mo_sym,
         wait-ms = <0>;
