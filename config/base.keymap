@@ -133,7 +133,7 @@
         COMBO(esc, &kp ESC, 2 3, DEF_L)
         COMBO(ent, &kp ENTER, 17 18, DEF_L)
         COMBO(del, &kp DEL, 15 16, DEF_L)
-        COMBO(tab, &kp TAB, 12 13, DEF_L)
+        COMBO(tab, &kp TAB, 11 12, DEF_L)
         COMBO(select_all, &kp LC(A), 20 21, NAV_L)
         COMBO(tmux_prefix, &kp LC(A), 23 25, DEF_L)
 
