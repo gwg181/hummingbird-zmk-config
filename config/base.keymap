@@ -136,6 +136,7 @@
         COMBO(tab, &kp TAB, 11 12, DEF_L)
         COMBO(select_all, &kp LC(A), 20 21, NAV_L)
         COMBO(tmux_prefix, &kp LC(A), 23 25, DEF_L)
+        COMBO(caps_word, &caps_word, 0 9, DEF_L)
 
         COMBO(sys_l, &mo_sys, 26 27, NUM_L)
 
