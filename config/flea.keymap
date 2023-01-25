@@ -133,7 +133,6 @@
         COMBO(tmux_prefix, &kp LC(A), 22 24, DEF_L UPP_L SYM_L NUM_L)
         COMBO(caps_word, &caps_word, 18 25, DEF_L)
 
-        COMBO(sys_l, &mo_sys, 26 27, NUM_L)
 
     };
 
@@ -153,7 +152,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                            &kp P         &kp U         &kp O         &kp K             &kp B         &kp D         &kp R         &kp F
              &kp W         &kp I         &kp E         &kp A         &kp DOT           &kp G         &kp T         &kp N         &kp S         &kp H
-             &kp J         &kp Y         &kp QUOT      &kp COMMA                                     &kp M         &kp L         &kp C         &kp Q
+             &kp J         &kp Y         &kp QUOT      &lt SYS_L COMMA                               &kp M         &kp L         &kp C         &kp Q
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &mo_nav       &kp SPACE         &mo_upp       &mo_sym
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
