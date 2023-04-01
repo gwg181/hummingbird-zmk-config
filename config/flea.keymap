@@ -64,6 +64,26 @@
         tap-ms = <40>;
         bindings = <&kp EXCL &kp EQUAL>;)
 
+    ZMK_MACRO(gprev, 
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp SPACE &kp M &kp P>;)
+
+    ZMK_MACRO(gnext, 
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp SPACE &kp M &kp N>;)
+
+    ZMK_MACRO(mprev, 
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp M &kp LBKT>;)
+
+    ZMK_MACRO(mnext, 
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp M &kp RBKT>;)
+
     ZMK_MACRO(arrow,
         wait-ms = <30>;
         tap-ms = <40>;
@@ -164,8 +184,8 @@
             label = "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp N0        &kp LC(O)     &kp HOME      &kp LC(U)         &kp PG_UP     &kp END       &kp LC(I)     &kp DLLR
-             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LC(D)         &kp PG_DN     &kp LARW      &kp DARW      &kp UARW      &kp RARW
+                           &gprev        &kp LC(O)     &kp HOME      &mprev            &kp PG_UP     &kp END       &kp LC(I)     &gnext
+             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &mnext             &kp PG_DN     &kp LARW      &kp DARW      &kp UARW      &kp RARW
              &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp LS(TAB)   &key_repeat   &caps_word
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &kp BSPC      &kp DEL
