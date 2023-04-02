@@ -84,6 +84,16 @@
         tap-ms = <40>;
         bindings = <&kp M &kp RBKT>;)
 
+    ZMK_MACRO(lfwd, 
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp SPACE &kp S>;)
+
+    ZMK_MACRO(lbck, 
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp SPACE &kp LS(S)>;)
+
     ZMK_MACRO(arrow,
         wait-ms = <30>;
         tap-ms = <40>;
@@ -186,7 +196,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                            &gprev        &kp LC(O)     &kp HOME      &mprev            &kp PG_UP     &kp END       &kp LC(I)     &gnext
              &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &mnext            &kp PG_DN     &kp LARW      &kp DARW      &kp UARW      &kp RARW
-             &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp LS(TAB)   &key_repeat   &caps_word
+             &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &lbck         &lfwd         &key_repeat   &caps_word
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &kp BSPC      &kp DEL
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
