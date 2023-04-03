@@ -87,12 +87,12 @@
     ZMK_MACRO(lfwd, 
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp SPACE &kp S>;)
+        bindings = <&kp SPACE &kp L &kp S>;)
 
     ZMK_MACRO(lbck, 
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp SPACE &kp LS(S)>;)
+        bindings = <&kp SPACE &kp L &kp LS(S)>;)
 
     ZMK_MACRO(arrow,
         wait-ms = <30>;
