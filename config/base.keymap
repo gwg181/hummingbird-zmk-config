@@ -68,11 +68,6 @@
         tap-ms = <40>;
         bindings = <&kp MINUS &kp GT>;)
 
-    ZMK_MACRO(hop,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp G &kp S &kp S>;)
-
     ZMK_MACRO(mo_sym,
         wait-ms = <0>;
         tap-ms = <0>;
@@ -135,7 +130,7 @@
         COMBO(del, &kp DEL, 15 16, DEF_L)
         COMBO(tab, &kp TAB, 11 12, DEF_L)
         COMBO(select_all, &kp LC(A), 20 21, NAV_L)
-        COMBO(tmux_prefix, &kp LC(A), 23 25, DEF_L)
+        COMBO(tmux_prefix, &kp LC(B), 23 25, DEF_L)
         COMBO(caps_word, &caps_word, 18 25, DEF_L)
 
         COMBO(sys_l, &mo_sys, 26 27, NUM_L)
@@ -170,7 +165,7 @@
             label = "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &none         &kp N0        &kp LC(O)     &kp HOME      &hop              &kp PG_UP     &kp END       &kp LC(I)     &kp DLLR      &caps_word
+             &none         &kp N0        &kp LC(O)     &kp HOME      &none             &kp PG_UP     &kp END       &kp LC(I)     &kp DLLR      &caps_word
              &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LC(Z)         &kp PG_DN     &kp LARW      &kp DARW      &kp UARW      &kp RARW
                            &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp TAB       &kp LS(TAB)   &key_repeat
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
