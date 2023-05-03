@@ -219,7 +219,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
              &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
-                           &reset        &none         &bootloader                                   &none         &none         &none
+                           &sys_reset    &none         &bootloader                                   &none         &none         &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &none        &none              &none        &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
