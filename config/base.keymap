@@ -132,6 +132,7 @@
         COMBO(select_all, &kp LC(A), 20 21, NAV_L)
         COMBO(tmux_prefix, &kp LC(B), 23 25, DEF_L)
         COMBO(caps_word, &caps_word, 18 25, DEF_L)
+        COMBO(scrub_key, &kp LGUI, 0 10, DEF_L)
 
         COMBO(sys_l, &mo_sys, 26 27, NUM_L)
 
@@ -204,11 +205,11 @@
             label = "Num";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &none         &kp N7        &kp N4        &kp N3        &kp PLUS          &kp K        &kp W         &kp B         &kp G         &kp Y
-             &kp GRAVE     &kp N2        &kp N1        &kp N0        &kp EQUAL         &kp J        &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
-                           &kp N8        &kp N6        &kp N5                                       &kp D         &none         &none
+             &none         &kp N7        &kp N8        &kp N9        &kp PLUS          &kp K        &kp W         &kp B         &kp G         &kp Y
+             &kp GRAVE     &kp N4        &kp N5        &kp N6        &kp EQUAL         &kp J        &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+                           &kp N1        &kp N2        &kp N3                                       &kp D         &none         &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp N9        &kp MINUS         &trans        &trans
+                                                       &kp N0        &kp MINUS         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
