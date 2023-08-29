@@ -14,7 +14,7 @@
 #define UPP_L 2
 #define SYM_L 3
 #define NUM_L 4
-#define SYS_L 5
+#define EXL_L 5
 
 /* Behavior Settings */
 &caps_word {
@@ -103,14 +103,14 @@
         , <&macro_pause_for_release>
         , <&macro_release &mo SYM_L>;)
 
-    ZMK_MACRO(mo_sys,
+    ZMK_MACRO(mo_exl,
         wait-ms = <0>;
         tap-ms = <0>;
         bindings
         = <&macro_tap &kp K_CANCEL>
-        , <&macro_press &mo SYS_L>
+        , <&macro_press &mo EXL_L>
         , <&macro_pause_for_release>
-        , <&macro_release &mo SYS_L>;)
+        , <&macro_release &mo EXL_L>;)
 
     combos {
         compatible = "zmk,combos";
@@ -180,7 +180,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                            &kp P         &kp U         &kp O         &kp K             &kp B         &kp D         &kp R         &kp F
              &kp W         &kp I         &kp E         &kp A         &kp DOT           &kp G         &kp T         &kp N         &kp S         &kp H
-             &kp J         &kp Y         &kp QUOT      &lt SYS_L COMMA                               &kp M         &kp L         &kp C         &kp Q
+             &kp J         &kp Y         &kp QUOT      &lt EXL_L COMMA                               &kp M         &kp L         &kp C         &kp Q
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &mo_nav       &kp SPACE         &mo_upp       &mo_sym
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -240,13 +240,13 @@
             >;
         };
 
-        sys_layer {
-            label = "Sys";
+        exl_layer {
+            label = "Exl";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &bt BT_PRV    &bt BT_CLR    &bt BT_NXT    &none             &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
-             &none         &none         &none         &none         &none             &none         &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &none
-             &none         &sys_reset        &none         &bootloader                                   &bootloader   &none         &sys_reset        &none
+                           &bt BT_PRV    &bt BT_CLR    &bt BT_NXT    &none             &kp LC(HOME)  &kp LC(HOME)  &bt BT_SEL 1  &bt BT_SEL 2
+             &none         &none         &none         &none         &none             &kp LC(END)   &bt BT_SEL 3  &kp F2        &bt BT_SEL 5      &kp LS(SPACE)
+             &none         &sys_reset    &none         &bootloader                                   &kp LS(LC(DLLR))   &kp LC(TILDE)  &kp LS(LC(PRCNT)) &kp LC(SPACE)
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &none        &none              &none        &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
