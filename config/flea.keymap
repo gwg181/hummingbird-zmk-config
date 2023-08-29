@@ -25,7 +25,13 @@
   release-after-ms = <60000>;
 };
 
+
 / {
+
+macros {
+  #include "macros.dtsi"
+};
+
     ZMK_MACRO(mo_nav,
         wait-ms = <0>;
         tap-ms = <0>;
@@ -244,7 +250,7 @@
             label = "Exl";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &bt BT_PRV    &bt BT_CLR    &bt BT_NXT    &none             &kp LC(HOME)  &kp LC(HOME)  &bt BT_SEL 1  &bt BT_SEL 2
+                           &bt BT_PRV    &bt BT_CLR    &bt BT_NXT    &none             &kp LC(HOME)  &kp LC(HOME)  &kp F4        &bt BT_SEL 2
              &none         &none         &none         &none         &none             &kp LC(END)   &bt BT_SEL 3  &kp F2        &bt BT_SEL 5      &kp LS(SPACE)
              &none         &sys_reset    &none         &bootloader                                   &kp LS(LC(DLLR))   &kp LC(TILDE)  &kp LS(LC(PRCNT)) &kp LC(SPACE)
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯

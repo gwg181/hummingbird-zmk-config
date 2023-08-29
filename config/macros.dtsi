@@ -1,23 +1,28 @@
-    ZMK_MACRO(leq,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp LT &kp EQUAL>;
-    )
+/* Macro macro: */
+#define str(s) #s
+#define MACRO(NAME, BINDINGS) \
+  macro_##NAME: macro_##NAME { \
+      compatible = "zmk,behavior-macro"; \
+      label = str(macro_##NAME); \
+      #binding-cells = <0>; \
+      wait-ms = <30>; \
+      tap-ms = <40>; \
+      bindings = <BINDINGS>; \
+  };
 
-    ZMK_MACRO(eq,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp EQUAL &kp EQUAL>;
-    )
+/* Brackets */
+MACRO(parentheses, &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT)
+MACRO(brackets, &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT)
+MACRO(ltgt, &kp LESS_THAN &kp GREATER_THAN &kp LEFT)
 
-    ZMK_MACRO(geq,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp GT &kp EQUAL>;
-    )
+/* Suspend macOS by holding power key for 1 second */
+MACRO(power, &macro_tap_time 1000 &kp C_POWER)
 
-    ZMK_MACRO(neq,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp EXCL &kp EQUAL>;
-    )
+/* Excel Macros */
+
+MACRO(exl_ins_abv, &kp LC(PLUS)) // Insert Row Above
+MACRO(exl_ins_bel, &kp LC(LS(PLUS))) // Insert Row Below
+MACRO(exl_auto_sum, &kp LA(EQUAL)) // AutoSum
+MACRO(exl_tgl_df, &kp LC(GRAVE)) // Toggle data/formulas
+MACRO(exl_cur_fmt, &kp LC(LS(DLLR))) // Currency format
+MACRO(exl_pct_fmt, &kp LC(LS(PRCNT))) // Percent format
