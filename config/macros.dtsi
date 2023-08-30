@@ -20,9 +20,15 @@ MACRO(power, &macro_tap_time 1000 &kp C_POWER)
 
 /* Excel Macros */
 
-MACRO(exl_ins_abv, &kp LC(PLUS)) // Insert Row Above
-MACRO(exl_ins_bel, &kp LC(LS(PLUS))) // Insert Row Below
 MACRO(exl_auto_sum, &kp LA(EQUAL)) // AutoSum
 MACRO(exl_tgl_df, &kp LC(GRAVE)) // Toggle data/formulas
-MACRO(exl_cur_fmt, &kp LC(LS(DLLR))) // Currency format
 MACRO(exl_pct_fmt, &kp LC(LS(PRCNT))) // Percent format
+MACRO(exl_cmt_ins, &kp LC(LS(F2))) // Cell Comment
+MACRO(exl_sel_dep, &kp LC(RBKT)) // Select Dependents
+MACRO(exl_sel_pre, &kp LC(LBKT)) // Select Precendents
+
+
+ZMK_MACRO(exl_cur_fmt, // Currency format
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(LS(DLLR))>;)
