@@ -1,34 +1,71 @@
-/* Macro macro: */
-#define str(s) #s
-#define MACRO(NAME, BINDINGS) \
-  macro_##NAME: macro_##NAME { \
-      compatible = "zmk,behavior-macro"; \
-      label = str(macro_##NAME); \
-      #binding-cells = <0>; \
-      wait-ms = <30>; \
-      tap-ms = <40>; \
-      bindings = <BINDINGS>; \
-  };
-
-/* Brackets */
-MACRO(parentheses, &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT)
-MACRO(brackets, &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT)
-MACRO(ltgt, &kp LESS_THAN &kp GREATER_THAN &kp LEFT)
-
-/* Suspend macOS by holding power key for 1 second */
-MACRO(power, &macro_tap_time 1000 &kp C_POWER)
-
 /* Excel Macros */
-
-MACRO(exl_auto_sum, &kp LA(EQUAL)) // AutoSum
-MACRO(exl_tgl_df, &kp LC(GRAVE)) // Toggle data/formulas
-MACRO(exl_pct_fmt, &kp LC(LS(PRCNT))) // Percent format
-MACRO(exl_cmt_ins, &kp LC(LS(F2))) // Cell Comment
-MACRO(exl_sel_dep, &kp LC(RBKT)) // Select Dependents
-MACRO(exl_sel_pre, &kp LC(LBKT)) // Select Precendents
-
 
 ZMK_MACRO(exl_cur_fmt, // Currency format
     wait-ms = <0>;
     tap-ms = <0>;
     bindings = <&kp LC(LS(DLLR))>;)
+
+ZMK_MACRO(exl_pct_fmt, // Percent format
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(LS(PRCNT))>;)
+
+ZMK_MACRO(exl_num_fmt, // Number format
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(LS(EXCL))>;)
+
+ZMK_MACRO(exl_auto_sum, // AutoSum
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LA(EQUAL)>;)
+
+ZMK_MACRO(exl_tgl_df, // Toggle data/formulas
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(GRAVE)>;)
+
+ZMK_MACRO(exl_cmt_ins, // Cell Comment
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(LS(F2))>;)
+
+ZMK_MACRO(exl_sel_dep, // Select Dependents
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(RBKT)>;)
+
+ZMK_MACRO(exl_sel_pre, // Select Precedents
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(LBKT)>;)
+
+ZMK_MACRO(exl_sel_row, // Select Row
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LS(SPACE)>;)
+
+ZMK_MACRO(exl_sel_col, // Select Column
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(SPACE)>;)
+
+ZMK_MACRO(exl_nav_beg, // Navigate Beginning
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(HOME)>;)
+
+ZMK_MACRO(exl_nav_end, // Navigate End
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(END)>;)
+
+ZMK_MACRO(exl_del_sel, // Delete Selected row or column
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LC(MINUS)>;)
+
+ZMK_MACRO(exl_rpt_act, // Repeat Action
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp F4>;)
