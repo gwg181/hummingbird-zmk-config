@@ -155,8 +155,15 @@ macros {
         COMBO(right_parenthesis, &kp RPAR, 6 15, DEF_L UPP_L SYM_L NUM_L)
         COMBO(left_brace, &kp LBRC, 2 11, DEF_L UPP_L SYM_L NUM_L)
         COMBO(right_brace, &kp RBRC, 5 14, DEF_L UPP_L SYM_L NUM_L)
+        COMBO(less_than, &kp LT, 3 12, DEF_L UPP_L SYM_L NUM_L)
+        COMBO(grather_than, &kp GT, 4 13, DEF_L UPP_L SYM_L NUM_L)
 
         /* Convenience */
+
+        COMBO(quote, &kp DQT, 6 7, DEF_L)
+        COMBO(del_word, &kp LC(BSPC), 22 24, DEF_L)
+        COMBO(caps_lock, &kp CAPS, 0 7, DEF_L)
+        COMBO(caps_word, &caps_word, 1 6, DEF_L)
         COMBO(esc, &kp ESC, 1 2, DEF_L)
         COMBO(ent, &kp ENTER, 15 16, DEF_L)
         COMBO(del, &kp DEL, 4 5, DEF_L)
@@ -164,7 +171,6 @@ macros {
         COMBO(stab, &kp LS(TAB), 0 1, DEF_L)
         COMBO(select_all, &kp LC(A), 19 20, NAV_L)
         COMBO(tmux_prefix, &kp LC(B), 22 24, DEF_L UPP_L SYM_L NUM_L)
-        COMBO(caps_word, &caps_word, 18 25, DEF_L)
 
         COMBO(vim_increment, &kp LC(A), 14 22, DEF_L)
         COMBO(vim_decrement, &kp LC(X), 14 22, DEF_L)
@@ -186,11 +192,11 @@ macros {
         default_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp P         &kp U         &kp O         &kp K             &kp B         &kp D         &kp R         &kp F
-             &kp W         &kp I         &kp E         &kp A         &kp DOT           &kp G         &kp T         &kp N         &kp S         &kp H
-             &kp J         &kp Y         &kp QUOT      &lt EXL_L COMMA                               &kp M         &kp L         &kp C         &kp Q
+                           &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y
+             &kp R         &kp S         &kp T         &kp H         &kp K             &kp X         &kp N         &kp A         &kp I         &kp O
+             &kp W         &kp C         &kp G         &kp D                                         &kp M         &kp COMMA     &kp DOT       &kp SQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &mo_nav       &kp SPACE         &mo_upp       &mo_sym
+                                                       &mo_nav       &kp SPACE         &kp E         &mo_sym
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             >;
