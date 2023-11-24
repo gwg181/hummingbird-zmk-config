@@ -154,7 +154,8 @@ macros {
         COMBO(grather_than, &kp GT, 4 13, DEF_L UPP_L SYM_L NUM_L)
 
         /* Convenience */
-
+        COMBO(lshift, &sk LSHFT, 9 10, DEF_L)
+        COMBO(rshift, &sk RSHFT, 15 16, DEF_L)
         COMBO(quote, &kp DQT, 6 7, DEF_L)
         COMBO(del_word, &kp LC(BSPC), 22 24, DEF_L)
         COMBO(caps_lock, &kp CAPS, 0 7, DEF_L)
