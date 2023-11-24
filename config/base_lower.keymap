@@ -183,9 +183,9 @@ macros {
         default_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y
-             &kp R         &kp S         &kp T         &kp H         &kp K             &kp X         &kp N         &kp A         &kp I         &kp O
-             &kp W         &kp C         &kp G         &kp D                                         &kp M         &kp COMMA     &kp DOT       &kp SQT
+                           &kp C         &kp G         &kp D         &kp K             &kp J         &kp L         &kp U         &kp Y
+             &kp R         &kp S         &kp T         &kp H         &kp P             &kp V         &kp N         &kp A         &kp I         &kp O
+             &kp X         &kp B         &kp W         &kp F                                         &kp M         &kp COMMA     &kp DOT       &kp SQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &mo_nav       &kp SPACE         &kp E         &mo_sym
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
