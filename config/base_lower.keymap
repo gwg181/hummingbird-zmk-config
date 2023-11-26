@@ -188,7 +188,7 @@ macros {
              &kp R         &kp S         &kp T         &kp H         &kp P             &kp V         &kp N         &kp A         &kp I         &kp O
              &kp X         &kp B         &kp W         &kp F                                         &kp M         &kp COMMA     &kp DOT       &kp SQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &mo_nav       &kp SPACE         &kp E         &mo_sym
+                                                       &mo_nav       &kp SPACE         &lt NUM_L E   &mo_sym
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             >;
