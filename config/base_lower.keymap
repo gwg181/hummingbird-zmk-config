@@ -99,9 +99,9 @@
             label = "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &none         &kp LC(O)     &kp HOME      &kp LS(LA(UARW)) &kp PG_UP      &kp HOME      &kp UARW      &kp END
-             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(DARW)) &kp PG_DN      &kp LARW      &kp DARW      &kp UARW      &kp INS
-             &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &none         &kp LS(TAB)   &key_repeat   &kp DEL
+                           &none         &kp LA(DARW)  &kp LA(UARW)  &kp LS(LA(UARW))  &kp PG_UP     &kp HOME        &kp UARW      &kp END
+             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(DARW))  &kp PG_DN     &kp LARW        &kp DARW      &kp UARW      &kp INS
+             &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp LC(LS(TAB)) &kp LC(TAB)   &key_repeat   &kp DEL
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &kp BSPC      &kp DEL
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
