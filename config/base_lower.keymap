@@ -116,7 +116,7 @@
              &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(DARW))  &kp PG_DN     &kp LARW        &kp DARW      &kp UARW      &kp RARW
              &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp LC(LS(TAB)) &kp LC(TAB)   &key_repeat   &kp INS
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &trans            &kp BSPC      &kp DEL
+                                                       &sl TMX_L     &trans            &kp BSPC      &kp DEL
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
