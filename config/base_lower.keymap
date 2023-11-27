@@ -93,7 +93,7 @@ macros {
              &kp R         &kp S         &kp T         &kp H         &kp P             &kp V         &kp N         &kp A         &kp I         &kp O
              &kp X         &kp B         &kp W         &kp F                                         &kp M         &kp COMMA     &kp DOT       &kp SQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &sl NAV_L     &kp SPACE         &lt NUM_L E   &sl SYM_L
+                                                       &sl 1         &kp SPACE         &lt NUM_L E   &sl 2
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             >;
