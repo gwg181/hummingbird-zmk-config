@@ -25,13 +25,15 @@
   release-after-ms = <60000>;
 };
 
+
+/ {
+
+
     ZMK_MACRO(tprev,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&kp LC(B) &kp P>;)
 
-
-/ {
 
     combos {
         compatible = "zmk,combos";
