@@ -99,9 +99,9 @@
             label = "Nav";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &gprev        &kp LC(O)     &kp HOME      &pprev            &kp PG_UP     &kp END       &kp LC(I)     &gnext
-             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &pnext            &kp PG_DN     &kp LARW      &kp DARW      &kp UARW      &kp RARW
-             &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &neoclip      &kp LS(TAB)   &key_repeat   &caps_word
+                           &none         &kp LC(O)     &kp HOME      &none            &kp PG_UP     &kp END        &kp LC(I)     &none
+             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &none            &kp PG_DN     &kp LARW       &kp DARW      &kp UARW      &kp RARW
+             &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &none         &kp LS(TAB)   &key_repeat   &caps_word
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &kp BSPC      &kp DEL
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -112,9 +112,9 @@
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp AMPS      &kp ASTRK     &kp BSLH      &kp PLUS          &none         &leq          &eq           &geq
+                           &kp AMPS      &kp ASTRK     &kp BSLH      &kp PLUS          &none         &none         &none         &geq
              &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp EQUAL         &none         &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI
-             &kp SEMI      &kp EXCL      &kp AT        &kp POUND                                     &kp LT        &kp PIPE      &kp GT        &arrow
+             &kp SEMI      &kp EXCL      &kp AT        &kp POUND                                     &kp LT        &kp PIPE      &kp GT        &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp UNDER     &kp MINUS         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
