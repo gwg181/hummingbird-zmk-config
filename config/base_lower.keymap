@@ -68,8 +68,8 @@
         COMBO(del_word, &kp LC(BSPC), 22 24, DEF_L)
         COMBO(caps_lock, &kp CAPS, 0 7, DEF_L)
         COMBO(caps_word, &caps_word, 1 6, DEF_L)
-        COMBO(esc, &kp ESC, 9 19, DEF_L)
-        COMBO(ent, &kp ENTER, 16 24, DEF_L)
+        COMBO(esc, &kp ESC, 9 11, DEF_L)
+        COMBO(ent, &kp ENTER, 14 16, DEF_L)
         COMBO(stab, &kp LS(TAB), 10 11, DEF_L)
         COMBO(tab, &kp TAB, 14 15, DEF_L)
 
@@ -100,7 +100,7 @@
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                            &none         &kp LA(DARW)  &kp LA(UARW)  &kp LS(LA(UARW))  &kp PG_UP     &kp HOME        &kp UARW      &kp END
-             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(DARW))  &kp PG_DN     &kp LARW        &kp DARW      &kp UARW      &kp INS
+             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(DARW))  &kp PG_DN     &kp LARW        &kp DARW      &kp RARW      &kp INS
              &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &kp LC(LS(TAB)) &kp LC(TAB)   &key_repeat   &kp DEL
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &kp BSPC      &kp DEL
