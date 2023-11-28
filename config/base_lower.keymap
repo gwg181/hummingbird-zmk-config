@@ -29,15 +29,25 @@
 / {
 
 
-    ZMK_MACRO(tprev,
+    ZMK_MACRO(twprev,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&kp LC(B) &kp P>;)
 
-    ZMK_MACRO(tnext,
+    ZMK_MACRO(twnext,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&kp LC(B) &kp N>;)
+
+    ZMK_MACRO(tsprev,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(B) &kp LPAR>;)
+
+    ZMK_MACRO(tsnext,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(B) &kp RPAR>;)
 
 
     combos {
@@ -152,11 +162,11 @@
             label = "Tmux";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp N7        &kp N4        &kp N3        &kp PLUS             &kp K         &kp W         &kp B         &kp G
-             &sk LSHFT     &sk LCTRL     &sk LALT      &sk LGUI      &kp EQUAL            &kp J         &tprev        &kp LC(B)     &tnext        &sk LGUI
-             &kp TILDE     &kp N8        &kp N6        &kp N5                                           &kp D         &none         &none         &kp Y
+                           &none         &none         &none        &none                &none         &none         &tsnext       &none
+             &none         &none         &none         &none        &none                &none         &twprev       &kp LC(B)     &twnext       &none
+             &none         &none         &none         &none                                           &none         &tsprev       &none         &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp N9        &kp MINUS         &trans        &trans
+                                                       &trans        &trans            &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────
             >;
         };
