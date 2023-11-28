@@ -28,6 +28,15 @@
 
 / {
 
+    ZMK_MACRO(tsess,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(B) &kp LC(C)>;)
+
+    ZMK_MACRO(twin,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(B) &kp C>;)
 
     ZMK_MACRO(twprev,
         wait-ms = <30>;
@@ -48,6 +57,11 @@
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&kp LC(B) &kp RPAR>;)
+
+    ZMK_MACRO(thumbs,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(B) &kp SPACE>;)
 
 
     combos {
@@ -163,10 +177,10 @@
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                            &none         &none         &none        &none                &none         &none         &tsnext       &none
-             &none         &none         &none         &none        &none                &none         &twprev       &kp LC(B)     &twnext       &none
+             &none         &none         &none         &none        &none                &none         &twprev       &thumbs       &twnext       &none
              &none         &none         &none         &none                                           &none         &tsprev       &none         &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &trans            &trans        &trans
+                                                       &trans        &trans            &twin         &tsess
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────
             >;
         };
