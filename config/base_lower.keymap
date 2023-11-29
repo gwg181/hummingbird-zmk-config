@@ -28,6 +28,27 @@
 
 / {
 
+
+    ZMK_MACRO(tpr,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(B) &kp RARW>;)
+
+    ZMK_MACRO(tpl,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(B) &kp LARW>;)
+
+    ZMK_MACRO(tsh,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(B) &kp DQT>;)
+
+    ZMK_MACRO(tsv,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(B) &kp PRCNT>;)
+
     ZMK_MACRO(tsess,
         wait-ms = <30>;
         tap-ms = <40>;
@@ -176,11 +197,11 @@
             label = "Tmux";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &none         &none         &none        &none                &none         &none         &tsnext       &none
-             &none         &none         &none         &none        &none                &none         &twprev       &thumbs       &twnext       &none
-             &none         &none         &none         &none                                           &none         &tsprev       &none         &none
+                           &none         &none         &none        &none                &tsnext       &none         &twnext       &none
+             &none         &none         &none         &none        &none                &tsprev       &tpl          &thumbs       &tpr          &none
+             &none         &none         &none         &none                                           &none         &twprev       &none         &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &trans            &twin         &tsess
+                                                       &tsh          &tsv              &twin         &tsess
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────
             >;
         };
