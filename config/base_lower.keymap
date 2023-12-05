@@ -130,6 +130,7 @@
         COMBO(ent, &kp ENTER, 14 16, DEF_L)
         COMBO(stab, &kp LS(TAB), 10 11, DEF_L)
         COMBO(tab, &kp TAB, 14 15, DEF_L)
+        COMBO(dot, &kp DOT, 9 10, NUM_L)
 
         COMBO(select_all, &kp LC(A), 19 20, NAV_L)
 
