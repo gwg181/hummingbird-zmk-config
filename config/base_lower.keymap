@@ -247,7 +247,7 @@
              &none         &none         &none         &none        &none                &tsprev       &tpl          &tpd          &tpu          &tpr
              &none         &none         &none         &none                                           &tcm          &tp           &none         &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &tsh          &tsv              &twin         &tsess
+                                                          &tsh          &tsv              &twin         &tsess
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────
             >;
         };
